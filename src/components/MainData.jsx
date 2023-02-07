@@ -2,12 +2,19 @@ export const MAIN_DATA = [
   {
     id: 1,
     text: "Modal",
-    name: "first",
+    name: "modal",
   },
   {
     id: 2,
     text: "Slider",
-    name: "second",
+    name: "slider",
   }
+  ,
+  {
+    id: 3,
+    text: "Grid",
+    name: "grid",
+  }
+
 
 ];
