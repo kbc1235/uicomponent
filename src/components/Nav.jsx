@@ -1,13 +1,16 @@
+import { MAIN_DATA } from './MainData';
 import styles from '../style/style.module.css';
 import NavItem from "./NavItem";
-const Nav = ()=>{
-    const Items = ['Modal','Grid','Slider', 'ETC', 'ETC', 'ETC', 'ETC', 'ETC'];
 
+
+const Nav = ({add})=>{
     return(
         <ul className={styles.nav}>
-           {Items.map((value, index)=>{
-            return <NavItem name={value} key={index} style={styles.nav_item}/>
-        })}
+            {
+            MAIN_DATA.map(data=>{
+               return <NavItem name={data.text} componet={add} key={data.id} style={styles.nav_item}/>
+            })
+           }
         </ul>
     )
 }
