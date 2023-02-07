@@ -1,9 +1,9 @@
 
-const NavItem = ({name, style, componet}) =>{
+const NavItem = ({name, text, style, componet}) =>{
         return(
             <li>
                 <button className={style} onClick={componet}>
-                    <span data-text={name}></span>
+                    <span data-text={text}  name={name}></span>
                 </button>
             </li>
         )

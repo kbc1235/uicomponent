@@ -8,7 +8,7 @@ const Nav = ({add})=>{
         <ul className={styles.nav}>
             {
             MAIN_DATA.map(data=>{
-               return <NavItem name={data.text} componet={add} key={data.id} style={styles.nav_item}/>
+               return <NavItem name={data.name} text={data.text} componet={add} key={data.id} style={styles.nav_item}/>
             })
            }
         </ul>

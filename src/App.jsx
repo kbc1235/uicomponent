@@ -7,20 +7,20 @@ import Test from './components/Test';
 const App = () =>{  
     const [content, setContent] = useState();
     const selectComponent = {
-        Test:<Test />  
+        first:<Test />,
+        second:`<div></div>` ,
     }
     const handleSubmit = e => {
-        const { text } = e.target;
-        setContent(text);
-        console.log(selectComponent[text])
+        let  name = e.target.name;
+        setContent(name);
+        console.log( e.target.name)
       }
 
     return(
      <div className="main">
         <Nav add={handleSubmit}/>
       
-        {content && <Content>{selectComponent[content]}</Content>}
-        {console.log(selectComponent[content])}
+        <Content>{selectComponent[`first`]}</Content>
         
      </div>
     )
