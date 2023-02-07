@@ -11,16 +11,15 @@ const App = () =>{
         second:`<div></div>` ,
     }
     const handleSubmit = e => {
-        let  name = e.target.name;
+        const {name} = e.target;
         setContent(name);
-        console.log( e.target.name)
       }
-
+      console.log(content)
     return(
      <div className="main">
         <Nav add={handleSubmit}/>
       
-        <Content>{selectComponent[`first`]}</Content>
+        <Content>{selectComponent[content]}</Content>
         
      </div>
     )

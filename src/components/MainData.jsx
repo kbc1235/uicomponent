@@ -1,12 +1,12 @@
 export const MAIN_DATA = [
   {
     id: 1,
-    text: "1번",
+    text: "Modal",
     name: "first",
   },
   {
     id: 2,
-    text: "2번",
+    text: "Slider",
     name: "second",
   }
 

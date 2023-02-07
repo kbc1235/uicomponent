@@ -7,11 +7,8 @@
     border-radius: 0 1em 1em 0;
     z-index: 1000;
 }
+
 .nav_item{
-    background-color: transparent;
-    border: none;
-}
-.nav_item span{
     display: flex;
     width: 6em;
     height: 4em;
@@ -20,8 +17,10 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    background-color: transparent;
+    border: none;
 }
-.nav_item span::after,.nav_item span::before{
+.nav_item::after,.nav_item::before{
     content: attr(data-text);
     position: absolute;
     color: transparent;
@@ -31,20 +30,20 @@
     font-weight: bold;
 }
 
-.nav_item span::before{
+.nav_item::before{
     text-shadow: 0 2px var(--point1);
-    margin-top:  -0.75em;
+    margin-top:  -0.5em;
 }
-.nav_item span::after{
+.nav_item::after{
     text-shadow: 0 -8px var(--point1);
     margin-top:  0.8em;
 }
 
-.nav_item span:hover::after{
+.nav_item:hover::after{
     transform: translateX(0.5em);
     filter: blur(1px);
 }
-.nav_item span:hover::before{
+.nav_item:hover::before{
     transform: translateX(-0.5em);
     filter: blur(1px);
 }

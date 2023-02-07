@@ -2,9 +2,7 @@
 const NavItem = ({name, text, style, componet}) =>{
         return(
             <li>
-                <button className={style} onClick={componet}>
-                    <span data-text={text}  name={name}></span>
-                </button>
+                <button className={style} onClick={componet} data-text={text} name={name}></button>
             </li>
         )
 }
