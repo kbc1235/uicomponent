@@ -9,32 +9,7 @@ const App = () =>{
         <Nav />
         <Content>
            <div>
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
-            asd
+            123123123
            </div>
         </Content>
      </div>
