@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 /* Layout  CSS*/
 .container{
     display: flex;
@@ -12,10 +14,27 @@
     padding:1em;
     border-radius: 0.5em;
 }
+/* main */
+.main_wrap{
+    display: flex;
+    gap:0.5em
+}
+.main{
+    display: flex;
+    gap:0.5em
+}
+.main_title{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2em;
+    font-weight: 700;
+}
 
-/*  */
+/* skillbox  */
 .skill_box{
-    height: 40px;
+    height: 60px;
     overflow: hidden;
 }
 .skill_view{
@@ -28,9 +47,14 @@
     transition: all 0.5s;
 }
 .skill_view > span{
+    font-family: 'Shadows Into Light', cursive;
     display: flex;
+    min-width: 100px;
     justify-content: center;
-    height: 40px;
+    align-items:center;
+    height: 60px;
+    color:var(--point1);
+    text-shadow: 0 0 1px var(--point-graph), 0 0 3px var(--point1);
 }
 
 
