@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import styles from "../style/style.module.css";
+import Profile from "./Profile";
 import Skill from "./Skill";
 
 const Main = () => {
@@ -33,6 +34,7 @@ const Main = () => {
 
   return (
     <div className={styles.main_wrap}>
+      <Profile name={'김영우'} />
       <div className={styles.main}>
         <div className={styles.main_title}>I can use</div>
         <div className={styles.skill_box} ref={viewWrap}>

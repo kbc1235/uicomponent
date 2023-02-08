@@ -16,12 +16,11 @@
 }
 /* main */
 .main_wrap{
-    display: flex;
-    gap:0.5em
 }
 .main{
     display: flex;
-    gap:0.5em
+    gap:0.5em;
+    justify-content: center;
 }
 .main_title{
     display: flex;
@@ -113,3 +112,6 @@
 
 /* keyframes */
 
+/* Profile */
+.profile_wrap{}
+.profile_img{width:10em;height: 10em;border: 1px solid #000; border-radius: 50%;}
