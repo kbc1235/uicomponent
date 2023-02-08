@@ -15,8 +15,7 @@
 
 /*  */
 .skill_box{
-    
-    height: 32px;
+    height: 40px;
     overflow: hidden;
 }
 .skill_view{
@@ -26,9 +25,13 @@
     font-size: 2em;
     font-weight: 700;
     position: relative;
-
+    transition: all 0.5s;
 }
-
+.skill_view > span{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
 
 
 /* Nav CSS */

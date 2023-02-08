@@ -1,6 +1,6 @@
-const Skill = ({skill, current})=>{
+const Skill = ({skill, upRef, index})=>{
     return(
-        <span ref={current}>{skill}</span>
+        <span ref={upRef}>{skill}</span>
     )
 }
 

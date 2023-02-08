@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 import styles from "../style/style.module.css";
 import Skill from "./Skill";
@@ -16,19 +15,29 @@ const Main = () => {
     "GitHub",
   ];
   const dom = useRef();
-  const height = useRef();
-  useEffect(()=>{
-    
-    
-  },[])
+  const viewWrap = useRef();
+
+  useEffect(() => {
+    let h = viewWrap.current.offsetHeight;
+    let y = h
+    let max = parseInt(h * skills.length);
+    setInterval(() => {
+        if (h >= max) {
+          h = 0;
+          dom.current.style.transform = `translateY(${h}px)`;
+        }
+        dom.current.style.transform = `translateY(-${h}px)`;
+        h += y;
+      }, 2000);
+  });
 
   return (
-    <div className="" >
+    <div className="">
       <div>
-        <div className={styles.skill_box}>
+        <div className={styles.skill_box} ref={viewWrap}>
           <div className={styles.skill_view} ref={dom}>
-            {skills.map((data, index) => {
-              return <Skill skill={data} key={index} current={height}/>;
+            {skills.map((data) => {
+              return <Skill skill={data} key={data}/>;
             })}
           </div>
         </div>
