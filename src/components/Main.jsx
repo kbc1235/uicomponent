@@ -8,7 +8,7 @@ const Main = () => {
     "HTML",
     "CSS",
     "JS",
-    "Jquery",
+    // "Jquery",
     "SCSS",
     "REACT",
     "Figma",
@@ -21,8 +21,8 @@ const Main = () => {
   useEffect(() => {
     let h = viewWrap.current.offsetHeight;
     let y = h;
-    let max = parseInt(h * skills.length);
-    setInterval(() => {
+    let max = parseInt(h * (skills.length));
+    let upSkill = setInterval(() => {
       if (h >= max) {
         h = 0;
         dom.current.style.transform = `translateY(${h}px)`;
@@ -30,11 +30,14 @@ const Main = () => {
       dom.current.style.transform = `translateY(-${h}px)`;
       h += y;
     }, 2000);
-  });
+    return ()=>{
+      clearInterval(upSkill)
+    }
+  }, []);
 
   return (
     <div className={styles.main_wrap}>
-      <Profile name={'김영우'} />
+      <Profile name={'🦉'} />
       <div className={styles.main}>
         <div className={styles.main_title}>I can use</div>
         <div className={styles.skill_box} ref={viewWrap}>

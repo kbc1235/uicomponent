@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 /* Layout  CSS*/
 .container{
@@ -11,24 +10,57 @@
 
 .container > div{
     background-color: var(--gray10);
-    padding:1em;
+    padding:5em;
     border-radius: 0.5em;
 }
 /* main */
 .main_wrap{
+    position: relative;
+    background-color: rgba(0,0,0,0) !important;
+    
 }
+.main_wrap::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow:
+    0 0 0 var(--point-graph),
+    0 0 0 var(--point1),
+    0 0 0 var(--point3),
+    0 0 0 var(--point2);
+    animation: neon 5s infinite alternate ease-in-out;
+    filter: blur(30px);
+}
+.main_wrap::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--mainColor);
+    border-radius: 0.5em;
+    z-index: 1;
+}
+.main_wrap > div{position: relative;z-index: 1;}
 .main{
     display: flex;
-    gap:0.5em;
+    gap:1em;
     justify-content: center;
+    
 }
 .main_title{
     display: flex;
     justify-content: center;
     align-items:center;
-    font-family: 'Shadows Into Light', cursive;
     font-size: 2em;
     font-weight: 700;
+    color:var(--gray10);
 }
 
 /* skillbox  */
@@ -46,10 +78,8 @@
     transition: all 0.5s;
 }
 .skill_view > span{
-    font-family: 'Shadows Into Light', cursive;
     display: flex;
     min-width: 100px;
-    justify-content: center;
     align-items:center;
     height: 60px;
     color:var(--point1);
@@ -111,7 +141,49 @@
 
 
 /* keyframes */
-
+@keyframes neon{
+   0%{
+    box-shadow:
+    20px 20px 100px var(--point-graph),
+    -20px -20px 100px var(--point1),
+    20px -20px 100px var(--point3),
+    -20px 20px 100px var(--point2);
+   }
+   50%{
+    box-shadow:
+    -20px -20px 100px var(--point-graph),
+    20px 20px 100px var(--point1),
+    -20px 20px 100px var(--point3),
+    20px -20px 100px var(--point2);
+   }
+   100%{
+    box-shadow:
+    20px 20px 100px var(--point-graph),
+    -20px -20px 100px var(--point1),
+    20px -20px 100px var(--point3),
+    -20px 20px 100px var(--point2);
+   }
+   
+   
+    
+    
+}
 /* Profile */
-.profile_wrap{}
-.profile_img{width:10em;height: 10em;border: 1px solid #000; border-radius: 50%;}
+.profile_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:2em;
+    margin-bottom: 0.8em;
+}
+.profile_info{
+    font-size: 2em;
+    font-weight: 700;
+}
+.profile_img{
+    width:8em;
+    height: 8em;
+    border: 1px solid var(--gray10);
+    border-radius: 50%;
+}

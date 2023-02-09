@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Content from "./components/Content";
 import Nav from "./components/Nav";
 import Main from './components/Main';
@@ -19,12 +19,14 @@ const App = () =>{
         setContent(name);
       }
     return(
-     <div className="main">
-        <Nav add={handleSubmit}/>
-      
-        {content && <Content>{selectComponent[content]}</Content>}
+    <React.StrictMode>
+        <div className="main">
+            <Nav add={handleSubmit}/>
         
-     </div>
+            {content && <Content>{selectComponent[content]}</Content>}
+            
+        </div>
+     </React.StrictMode>
     )
     
        
