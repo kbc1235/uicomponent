@@ -24,4 +24,9 @@ export const MAIN_DATA = [
     text: "Chart",
     name: "chart",
   },
+  {
+    id: 5,
+    text: "Toast",
+    name: "toast",
+  },
 ];

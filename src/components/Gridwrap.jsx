@@ -3,17 +3,27 @@ import GridItem from './GridItem';
 import { GRID_DATA } from './GridData';
 
 const Gridwrap = () => {
+  const tableStyle = {
+    width:'100%',
+    border:'1px solid #000'
+  }
   const col01 = {
-    maxWidth: 50,
+    width: '50px',
+    borderRight:'1px solid #000',
+    borderLeft:'1px solid #000'
   }
   const col02 = {
-    maxWidth: 80,
+    width: '80px',
+    padding: 10,
+    borderRight:'1px solid #000'
   }
   const col03 = {
-    maxWidth: 120,
+    width: 'calc(100% - 130px)',
+    padding: 10,
   }
+  
   return(
-    <table>
+    <table style={tableStyle}>
       <colgroup>
         <col style={col01}/>
         <col style={col02}/>
