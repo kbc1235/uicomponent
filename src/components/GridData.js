@@ -11,7 +11,7 @@ export const GRID_DATA = [
   },
   {
     id: 2,
-    name: "올빼미",
+    name: "새대갈",
     address: "서울특별시 북악산",
   },
   {
@@ -31,7 +31,7 @@ export const GRID_DATA = [
   },
   {
     id: 6,
-    name: "부엉이",
+    name: "새대갈",
     address: "서울특별시 도봉산",
   },
   {
@@ -46,7 +46,7 @@ export const GRID_DATA = [
   },
   {
     id: 9,
-    name: "올빼미",
+    name: "새대갈",
     address: "서울특별시 북악산",
   },
   {
@@ -61,7 +61,7 @@ export const GRID_DATA = [
   },
   {
     id: 12,
-    name: "부엉이",
+    name: "새대갈",
     address: "서울특별시 도봉산",
   },
   {
@@ -76,7 +76,7 @@ export const GRID_DATA = [
   },
   {
     id: 15,
-    name: "올빼미",
+    name: "새대갈",
     address: "서울특별시 북악산",
   },
   {
@@ -91,7 +91,7 @@ export const GRID_DATA = [
   },
   {
     id: 18,
-    name: "부엉이",
+    name: "새대갈",
     address: "서울특별시 도봉산",
   },
   {
