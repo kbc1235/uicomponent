@@ -182,11 +182,14 @@
     font-weight: 700;
 }
 .profile_img{
-    width:8em;
-    height: 8em;
-    border: 1px solid var(--gray10);
-    border-radius: 50%;
+    width:15em;
+    border-radius: 1em;
+    overflow: hidden;
+    box-sizing: border-box;
 }
+.profile_img img{width: 100%;object-fit: none;object-position: center;}
+
+
 
 /* modal */
 
@@ -302,4 +305,15 @@
     left: 0.3em;
     top: 0.7em;
 
+}
+
+
+/* toast */
+.toastWrap{
+    width:10em;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    height: 3em;
+    background-color: #fff;
 }
