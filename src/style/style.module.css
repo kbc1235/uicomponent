@@ -255,5 +255,51 @@
 
 /* GRID */
 .table{
-    
+
+}
+
+/* 라디오 */
+.radio_box + .radio_box{
+    margin-top: 1em;
+}
+.radio_box > input[type='radio']{
+    display: none;
+}
+.radio_box > label{
+    display: block;
+    position: relative;
+    padding:1em 1em 1em 2.5em;
+    transition: all 0.5s;
+    font-weight: 700;
+}
+.radio_box > label::after,.radio_box > label::before{
+    transition: all 0.5s;
+}
+.radio_box > input[type='radio']:not(:checked) + label::after,.radio_box > input[type='radio']:not(:checked) + label::before{
+    content: '';
+    display: block;
+    width:1.5em;
+    height: 1.5em;
+    background: #e1e3e5;
+    position: absolute;
+    left: 0.3em;
+    top: 0.7em;
+
+}
+.radio_box > input[type='radio']:checked + label{
+    text-decoration: underline;
+}
+
+.radio_box > input[type='radio']:checked + label::after,.radio_box > input[type='radio']:checked + label::before{
+    content: '';
+    display: block;
+    width:1.5em;
+    height: 1.5em;
+    background: var(--point1)
+    url("https://raw.githubusercontent.com/kbc1235/sideproject/main/icon_check.png")
+    no-repeat center / contain;
+    position: absolute;
+    left: 0.3em;
+    top: 0.7em;
+
 }

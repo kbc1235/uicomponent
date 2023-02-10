@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Main from './components/Main';
 import Modal from './components/Modal';
 import Grid from './components/Grid';
+import Radio from './components/Radio';
 
 
 
@@ -15,6 +16,7 @@ const App = () =>{
         slider:<div>슬라이드 컴포넌트 만들 예정</div> ,
         grid:<Grid />,
         chart:<div>D3 활용 컴포넌트 만들 예정</div> ,
+        radio:<Radio />,
     }
     const handleSubmit = e => {
         const {name} = e.target;
