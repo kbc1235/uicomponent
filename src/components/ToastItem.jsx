@@ -1,8 +1,8 @@
 import styles from '../style/style.module.css'
-const ToastItem = () => {
+const ToastItem = ({msg = '메시지 없음'}) => {
   return(
     <div className={styles.toastitem}>
-      Toast 팝업 등장!
+      {msg}
     </div>
   )
 }
