@@ -16,7 +16,7 @@ export const MAIN_DATA = [
   },
   {
     id: 3,
-    text: "Grid",
+    text: "Table",
     name: "grid",
   },
   {

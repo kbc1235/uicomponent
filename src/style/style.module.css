@@ -10,7 +10,7 @@
 
 .container > div{
     background-color: var(--gray10);
-    padding:5em;
+    padding:2em;
     border-radius: 0.5em;
 }
 /* main */
@@ -258,7 +258,18 @@
 
 /* GRID */
 .table{
-
+    width:100%;
+    border:1px solid #000
+}
+.table > thead{
+    border-bottom: 1px solid #000;
+}
+.table td, .table  th {
+    padding:0.5em;
+    text-align: center;
+}
+.table tr + tr{
+    border-top: 1px solid #000;
 }
 
 /* 라디오 */

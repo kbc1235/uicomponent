@@ -1,29 +1,25 @@
-/* eslint-disable array-callback-return */
+import styles from '../style/style.module.css'
 import GridItem from './GridItem';
 import { GRID_DATA } from './GridData';
 
 const Gridwrap = () => {
-  const tableStyle = {
-    width:'100%',
-    border:'1px solid #000'
-  }
   const col01 = {
-    width: '50px',
+    width: '100px',
     borderRight:'1px solid #000',
     borderLeft:'1px solid #000'
   }
   const col02 = {
-    width: '80px',
+    width: '150px',
     padding: 10,
     borderRight:'1px solid #000'
   }
   const col03 = {
-    width: 'calc(100% - 130px)',
+    width: 'calc(100% - 250px)',
     padding: 10,
   }
   
   return(
-    <table style={tableStyle}>
+    <table className={styles.table}>
       <colgroup>
         <col style={col01}/>
         <col style={col02}/>
@@ -38,8 +34,10 @@ const Gridwrap = () => {
       </thead>
       <tbody>
         {GRID_DATA.map( (data) =>{
-          return <GridItem id={data.id} name={data.name} address={data.address} key={data.id}/>
-        })}
+          return data.id <= 10 ? <GridItem id={data.id} name={data.name} address={data.address} key={data.id}/> : null
+        })
+        
+        }
       </tbody>
     </table>
   )
