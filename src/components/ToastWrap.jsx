@@ -1,9 +1,9 @@
 import styles from '../style/style.module.css';
 
-const ToastWrap = ({childen})=>{
+const ToastWrap = ({children})=>{
   return(
     <div className={styles.toastWrap}>
-      {childen}
+      {children}
     </div>
   )
 }
