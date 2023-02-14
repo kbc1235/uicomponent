@@ -5,9 +5,6 @@ import Forwardedrefcarousel from './Carousel';
 
 const CarouselWrap = () =>{
   const carousel = useRef();
-  const next = useRef();
-  const prev = useRef();
-
   useEffect(()=>{
     const $carousel =  carousel.current
     let w = $carousel.children.length;
@@ -31,8 +28,8 @@ const CarouselWrap = () =>{
           <CarouselItem imgName={'https://placeholder.com/assets/images/150x150-2-500x500.png'}/>
           <CarouselItem imgName={'https://placeholder.com/assets/images/150x150-2-500x500.png'}/>
       </Forwardedrefcarousel>
-      <button type='button' ref={next}>다음</button>
-      <button type='button' ref={prev}>이전</button>
+      <button type='button'>이전</button>
+      <button type='button'>다음</button>
     </div>
   )
 }
