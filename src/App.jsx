@@ -6,6 +6,7 @@ import Modal from './components/Modal';
 import Grid from './components/Grid';
 import Radio from './components/Radio';
 import Toast from './components/Toast';
+import CarouselWrap from './components/CarouselWrap';
 
 
 
@@ -14,9 +15,8 @@ const App = () =>{
     const selectComponent = {
         default:<Main />,
         modal:<Modal />,
-        slider:<div>슬라이드 컴포넌트 만들 예정</div> ,
+        slider:<CarouselWrap />,
         grid:<Grid />,
-        chart:<div>D3 활용 컴포넌트 만들 예정</div> ,
         radio:<Radio />,
         toast:<Toast />
     }

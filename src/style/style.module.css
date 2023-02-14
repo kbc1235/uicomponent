@@ -345,3 +345,15 @@
     background: var(--opacity);
     border:1px solid #fff
 }
+
+
+/* carousel */
+.carouselwrap{
+    width: 33em;
+    overflow: hidden;
+}
+.carousel{
+    display: flex;
+    gap: 1.5em;
+    transition: all 0.5s;
+}

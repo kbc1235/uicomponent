@@ -21,16 +21,11 @@ export const MAIN_DATA = [
   },
   {
     id: 4,
-    text: "Chart",
-    name: "chart",
-  },
-  {
-    id: 5,
     text: "Toast",
     name: "toast",
   },
   {
-    id: 6,
+    id: 5,
     text: "Radio",
     name: "radio",
   },
