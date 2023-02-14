@@ -354,6 +354,5 @@
 }
 .carousel{
     display: flex;
-    gap: 1.5em;
-    transition: all 0.5s;
+    gap:2.5em
 }
