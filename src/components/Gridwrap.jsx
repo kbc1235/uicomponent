@@ -33,10 +33,10 @@ const Gridwrap = () => {
         </tr>
       </thead>
       <tbody>
-        {GRID_DATA.map( (data) =>{
+        {
+        GRID_DATA.map( (data) =>{
           return data.id <= 10 ? <GridItem id={data.id} name={data.name} address={data.address} key={data.id}/> : null
         })
-        
         }
       </tbody>
     </table>
