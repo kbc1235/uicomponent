@@ -48,12 +48,22 @@ const CarouselWrap = () => {
           }
         />
       </Forwardedrefcarousel>
-      <button type="button" onClick={PrevSlide}>
-        이전
-      </button>
-      <button type="button" onClick={NextSlide}>
-        다음
-      </button>
+      <div className={styles.btnWrap}>
+        <button
+          type="button"
+          onClick={PrevSlide}
+          className={styles.carouselBtn}
+        >
+          이전
+        </button>
+        <button
+          type="button"
+          onClick={NextSlide}
+          className={styles.carouselBtn}
+        >
+          다음
+        </button>
+      </div>
     </div>
   );
 };
